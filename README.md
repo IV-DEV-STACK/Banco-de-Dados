@@ -7,7 +7,7 @@ dados e executar as consultas de verificação.
 ## Requisitos
 
 - Python 3.10 ou superior
-- Acesso ao PostgreSQL da conexão SQLTools `01` (banco `equipe01`)
+- Acesso ao PostgreSQL da turma (banco `equipe01`)
 
 ## Instalação e configuração
 
@@ -47,7 +47,9 @@ O comando também pode ser executado com `python -m project demonstrar`.
 ## Conferir pelo SQLTools
 
 1. Execute as migrações e o comando CRUD acima.
-2. No VS Code, conecte ao PostgreSQL pela conexão SQLTools `01`.
+2. No VS Code, abra `.vscode/settings.json` e substitua
+   `SEU_SERVIDOR_POSTGRES` pelo endereço do servidor da turma. Conecte pela
+   conexão SQLTools `PostgreSQL da turma`; a senha será solicitada pelo SQLTools.
 3. Abra [sql/verificacao.sql](./sql/verificacao.sql) e execute as consultas
    para conferir todos os livros, o filtro, a ordenação, o `UPDATE`, o `DELETE`
    e o `JOIN`.
