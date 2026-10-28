@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "project"
+version = "0.1.0"
+description = "Projeto Django de uma livraria com PostgreSQL"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "Django>=5.2,<6",
+    "psycopg[binary]>=3.2,<4",
+]
+
+[tool.setuptools.packages.find]
+include = ["project*", "livraria*"]
